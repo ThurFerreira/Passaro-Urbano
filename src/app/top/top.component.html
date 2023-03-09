@@ -1,10 +1,20 @@
 <div class="relative-top bg-white">
   <nav class="navbar navbar-light bg-faded">
     <div class="container">
-      <a href="#" class="navbar-brand">
-        <img src="/assets/logo.png" />
-      </a>
-      <a a href="#"><img src="/assets/carrinho.png" /></a>
+      <div class="row">
+        <div class="com-md-4">
+          <a href="" class="navbar-brand">
+            <img src="/assets/logo.png" />
+          </a>
+        </div>
+        <div class="com-md-6">
+          <input type="text" class="form-control" placeholder="pesquise por ofertas" #termoPesquisa (keyup)="pesquisa(termoPesquisa.value)">
+        </div>
+        <div class="col-md-2">
+          <a a href=""><img src="/assets/carrinho.png" /></a>
+        </div>
+      </div>
+    
     </div>
   </nav>
 
@@ -12,10 +22,10 @@
     <div class="container">
       <ul class="nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Restaurantes</a>
+          <a class="nav-link" routerLinkActive="active" href="restaurantes">Restaurantes</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Diversão</a>
+          <a class="nav-link" routerLinkActive="active" href="diversao">Diversão</a>
         </li>
       </ul>
     </div>
